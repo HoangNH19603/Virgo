@@ -9,10 +9,10 @@
 # z=x/y
 
 # loi nghiep vu (Logic Errors)
-# t=10
-# l=10
-# h=8.5
-# dtb=t+l+h/3
+# toan = 10
+# ly = 10
+# hoa = 8.5
+# dtb=toan+ly+hoa/3
 # print (dtb)
 
 # bat loi trong py
