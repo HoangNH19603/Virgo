@@ -1,7 +1,7 @@
 from time import *
-''' CÁC HÀM THỜI GIAN CƠ BẢN TRONG PYTHON
+''' time functions PYTHON
     *time.time() : trả về số giây tính từ epoch, hay còn gọi là giá trị timestamp
-    *time.ctime() : phương thức này chuyển đổi 1 ime được biểu diễn bằng số giây tính từ epoch thành biểu diễn dạng chuỗi
+    *time.ctime() : phương thức này chuyển đổi 1 time được biểu diễn bằng số giây tính từ epoch thành biểu diễn dạng chuỗi
     *time.sleep() : tạm dừng thực thi bằng số thời gian truyền vào
     *time.localtime() : lấy số giây được truyền vào làm đối số và trả về struct_time theo giờ địa phương
     *time.gmtime() : lấy số giây được truyền vào làm đối số và trả về struct_time theo giờ UCT
@@ -37,34 +37,38 @@ from time import *
 '''
 #------------------------------------------------------------------------------------------------
 #VÍ DỤ:
-#ham time()
+#time()
 seconds = time()
 print("so giay tinh tu epoch", seconds)
 
-#ham ctime()
-sec = ctime(1562983783) #nếu không truyền đối số, ctime sẽ trả về giá trị thời gian hiện tại
-print ("Local time: ", sec)
+#ctime()
+before = ctime(1562983783) #nếu không truyền đối số (timestamp), ctime sẽ trả về giá trị thời gian hiện tại
+now = ctime()
+print ("The day i was started learning python: ", before)
+print ("Today is: ", now)
 
-#ham sleep()
-print ("Start: ", ctime())
-sleep (10) #sử dụng cả trong vòng lặp
-print ("End: ", ctime())
+#sleep()
+print("start")
+for item in range(10):
+    time.sleep(1)
+    print(item)
+else: print("stop")
 
-#ham localtime()
-# toDay = localtime(1599194280) #nếu không cung cấp số giây thì thời gian trả về từ hàm time() sẽ được sử dụng
+#localtime()
+# toDay = localtime(1599194280) #nếu không cung cấp timestamp thì thời gian trả về từ hàm time() sẽ được sử dụng
 # print ("Today: ", toDay)
 # print ("mounth ", toDay.tm_mon)
 # print ("year ", toDay.tm_year)
 # print ("Hour ", toDay.tm_hour)
 
-#ham gmtime()
-# toDay = gmtime(1599194316) #nếu không cung cấp số giây thì thời gian trả về từ hàm time() sẽ được sử dụng
+#gmtime()
+# toDay = gmtime(1599194316) #nếu không cung cấp timestamp thì thời gian trả về từ hàm time() sẽ được sử dụng
 # print ("Today: ", toDay)
 # print ("mounth ", toDay.tm_mon)
 # print ("year ", toDay.tm_year)
 # print ("Hour ", toDay.tm_hour)
 
-#hàm mktime()
+#mktime()
 # t = (2020, 9, 4, 11, 40, 0, 4, 248, 0) #9 phần tử tương ứng với struct_time
 # lc_time = mktime(t)
 # print ("local time = ", lc_time) #nghịch đảo của hàm local time
@@ -79,17 +83,17 @@ print ("End: ", ctime())
 # s = time.mktime(t)
 # print("\ns:", seconds)
 
-#ham asctime()
+#asctime()
 # t = (2020, 9, 4, 11, 40, 0, 4, 248, 0) #tương ứng struct_time
 # result = asctime(t)
 # print ("Tra ve: ", result)
 
-#ham strftime()
+#strftime()
 # named_tuple = time.localtime() # lấy struct_time
 # time_string = time.strftime("%m/%d/%Y, %H:%M:%S", named_tuple)
 # print(time_string)
 
-#ham strptime()
+#strptime()
 # time_string = "17 July, 2019"
 # result = time.strptime(time_string, "%d %B, %Y")
 # print(result)
