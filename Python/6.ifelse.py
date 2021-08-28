@@ -5,8 +5,7 @@ physical = float(input('nhap diem ly: '))
 chemistry = float(input('nhap diem hoa: '))
 dtb = (math + physical + chemistry) / 3
 
-if dtb < 6 and dtb >= 4:
-    print ("HS TB")
+if dtb < 6 and dtb >= 4:print ("HS TB") #if inline
 elif dtb >= 6 and dtb < 8:
     print ("HS TT")
     if dtb >= 8.5:
@@ -23,8 +22,7 @@ elif dtb > 0 and dtb < 4:
         print ("Du'p")
     elif dtb >= 3:
         print ("Thi lai")
-else:
-    print ("nhap sai")
+else:print ("nhap sai") #else inline
 
 #if else inline
 Value_x = int(input("nhap gia tri 1: "))

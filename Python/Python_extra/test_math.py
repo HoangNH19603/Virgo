@@ -17,8 +17,8 @@ print ("")
 print ("tìm kết quả của các phương trình sau:")
 print ('i1 + (i2 * i3)')
 a = i1 + (i2 * i3)
-kq = int(input("nhập kết quả: "))
-if kq == a:
+# kq = int(input("nhập kết quả: "))
+if int(input("nhap ket qua")) == a:
     print ('True')
 else:
     print ('False \n',a)

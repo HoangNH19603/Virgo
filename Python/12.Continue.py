@@ -9,9 +9,7 @@
 # print (value_z)
 
 end_ = int(input("nhap gia tri ket thuc: "))
-sum_ = 0
-for sole in range (1, end_+1, 2):
-    if sole == 7 or sole == 13:
-        continue #neu lenh cotinue duoc thuc thi se bo qua nhung lenh ben duoi va quay tro ve vong lap
-    sum_ += sole
-print (sum_)
+for item in range (1,end_ + 1):
+    if item == 3 or item == 5: continue #neu lenh cotinue duoc thuc thi se bo qua nhung lenh ben duoi va quay tro ve vong lap
+    print(item,end='')
+print()

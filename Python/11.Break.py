@@ -1,12 +1,9 @@
 # print ("tim giai thua cua n")
 # while True:
-#     value_n = int(input("nhap n: "))
-#     value_i = 1
-#     value_x = 1
-#     while i <= value_n:
-#         value_x *= i
-#         value_i += 1
-#     print (value_x)
+    # val_sum = 1
+    # for item in range(1,int(input())):
+    #     val_sum *= item+1
+    # print(val_sum)
 #     ask = input("tiep khong? (c/k)")
 #     if ask == "k":
 #         break
