@@ -6,9 +6,10 @@ from time import *
     *time.localtime() : lấy số giây được truyền vào làm đối số và trả về struct_time theo giờ địa phương
     *time.gmtime() : lấy số giây được truyền vào làm đối số và trả về struct_time theo giờ UCT
     *time.mktime() : lấy struct_time (hoặc một tuple chứa 9 phần tử tương ứng với struct_time) làm đối số và trả về số giây tính từ epoch  (chuyển từ ngày, tháng, năm sang giây => nghịch đảo của hàm time.localtime())
-    time.asctime() : lấy struct_time (hoặc một tuple chứa 9 phần tử tương ứng với struct_time) làm đối số và trả về một chuỗi đại diện cho thời gian đó
+    *time.asctime() : lấy struct_time (hoặc một tuple chứa 9 phần tử tương ứng với struct_time) làm đối số và trả về một chuỗi đại diện cho thời gian đó
     *time.strftime() : lấy struct_time (hoặc một tuple chứa 9 phần tử tương ứng với struct_time) làm đối số và trả về một chuỗi đại diện cho thời gian đó trêm cpde định dạng được truyền vào
     *time.strptime () : phân tích một chuỗi đại diện cho 1 thời điểm, thời gian và trả về struct_time
+    more: https://docs.python.org/3/library/time.html
 '''
 #------------------------------------------------------------------------------------------------
 ''' Class time.struct_time
