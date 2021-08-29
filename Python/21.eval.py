@@ -1,4 +1,8 @@
-#Hàm Eval là 1 hàm mạnh mẽ có thể thực hiện được các chuỗi phép toán, hàm có thể xác định 1 list được truyền trong 1 chuỗi và các lệnh đơn giản
+'''
+Hàm Eval là 1 hàm mạnh mẽ có thể thực hiện được các chuỗi phép toán, hàm có thể xác định 1 list được truyền trong 1 chuỗi và các lệnh đơn giản
+Ham` Eval() chuyen 1 chuoi thanh cau lenh, neu dung cu phap cau lenh se duoc thuc thi
+more: https://www.w3schools.com/python/ref_func_eval.asp
+'''
 
 from time import *
 s = input("code: ")
