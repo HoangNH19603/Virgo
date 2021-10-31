@@ -2,8 +2,8 @@
 #Lambda is anonymous function
 #Syntax: lambda parameter:expression
 #Example
-# f = lambda x:x**2
-# print (f(int(input())))
+f = lambda x:x**2
+print (f(int(input())))
 
 #More example
 # def fx(a,b,c):
