@@ -8,5 +8,6 @@ string[end:]    get all characters from the beginning of the string to end -1
 string[:]    get all characters from the beginning of the string to the end of the string
 string[::-1]    get all characters in reverse order
 '''
-string = "Reverse string"
-print(string[::-1])
+# string = "Reverse string"
+# print(string[::-1])
+print("LeveL"[::-1])
