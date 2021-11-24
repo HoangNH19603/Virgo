@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2606ae0a-64cf-4d5b-a090-ae5ed979b79c": {
+      "ProjectGuid": "2606ae0a-64cf-4d5b-a090-ae5ed979b79c",
+      "DisplayName": "First_console",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
