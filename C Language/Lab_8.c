@@ -14,16 +14,24 @@ void main() {
 	struct sinhvien sv[100];
 	for (dem  = 0; dem < soluong; dem++)
 	{
-		printf("Nhap vao mssv: ");
-		scanf("%s", mssv);
+		fflush(stdin);
+		printf("Nhap vao mssv thu %d: ", dem + 1);
+		gets(mssv);
 		strcpy(sv[dem].mssv, mssv);
-		scanf("%s", ten);
+		printf("Nhap vao ho ten sinh vien thu %d: ", dem + 1);
+		gets(ten);
 		strcpy(sv[dem].tensv, ten);
-		scanf("%s", mssv);
+		printf("Nhap vao nganh hoc: ");
+		gets(nganh);
 		strcpy(sv[dem].nganh, nganh);
+		printf("Nhap vao diem trung binh: ");
+		scanf("%f", &sv[dem].dtb);
 	}
 	for (dem = 0; dem < soluong; dem++)
 	{
-		printf("%s\n", sv[dem].mssv);
+		printf("Ma so sinh vien: %s\n", sv[dem].mssv);
+		printf("Ten sinh vien: %s\n", sv[dem].tensv);
+		printf("Sinh vien hoc nganh: %s\n", sv[dem].nganh);
+		printf("Diem trung binh: %.2f\n", &sv[dem].dtb);
 	}
 }
