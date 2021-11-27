@@ -16,6 +16,7 @@ typedef struct {    //struct students
     float grade;
 } students;
 
+int i,j;
 students *students_array;
 
 students nhapthongtin(){
@@ -46,9 +47,9 @@ void print(students student){
 }
 
 void sort(students student[], int number_of_students){
-    for (int i = 0; i < number_of_students; i++)
+    for (i = 0; i < number_of_students; i++)
     {
-        for (int j = i + 1; j < number_of_students; j++)
+        for (j = i + 1; j < number_of_students; j++)
         {
             if (student[i].grade > student[j].grade)
             {
@@ -58,17 +59,26 @@ void sort(students student[], int number_of_students){
             }
         }
     }
-    for (int i = 0; i < number_of_students; i++)
+    for (i = 0; i < number_of_students; i++)
     {
         print(student[i]);
     }
 }
 
+void search(students student[], int number_of_students, char keyword[]){
+    for (i = 0; i < number_of_students; i++) {
+        if (strcmpi(keyword, student[i].id) == 0){
+            printf("<------------------<< THONG TIN SINH VIEN >>------------------>");
+            print(student[i]);
+            return;
+        }
+    }
+    printf("KHONG TON TAI MA SO SINH VIEN NAY!");
+}
+
 void thongbao(){
     system("cls");
-    printf("Chua nhap thong tin sinh vien, xin moi nhap lai!\n");
-    system("pause");
-    system("cls");
+    printf("CHUA NHAP THONG TIN SINH VIEN, AN PHIM 1 DE NHAP LAI!\n");
 }
 
 void main(){
@@ -76,6 +86,7 @@ void main(){
     char id[10];
     do
     {
+        system("cls");
         printf("<==========================<< MENU >>==========================>");
         printf("\nChuc nang 1: nhap va xuat thong tin sinh vien");
         printf("\nChuc nang 2: xuat ra thong tin sinh vien theo diem tang dan");
@@ -92,13 +103,13 @@ void main(){
                 scanf("%d", &number_of_students);
             } while(number_of_students<2);
             students_array = (students *)malloc(number_of_students * sizeof(students));
-            for (int i = 0; i < number_of_students; i++) {
+            for (i = 0; i < number_of_students; i++) {
                 printf("Nhap vao thong tin sinh vien thu %d\n", i + 1);
                 students_array[i] = nhapthongtin();
             }
             system("cls");
-            for (int i = 0; i < number_of_students; i++) {
-                printf("\n<----------<<Thong tin sinh vien thu %d>>---------->", i + 1);
+            for (i = 0; i < number_of_students; i++) {
+                printf("\n<--------------<< THONG TIN SINH VIEN THU %d >>-------------->", i + 1);
                 print(students_array[i]);
             }
             break;
@@ -116,6 +127,19 @@ void main(){
                 thongbao();
                 break;
             }
+            system("cls");
+            fflush(stdin);
+            printf("<------------------<< TIM KIEM SINH VIEN >>------------------>");
+            printf("\nNhap vao ma so sinh vien: ");
+            scanf("%s", id);
+            search(students_array, number_of_students, id);
+            break;
+        case 4:
+            printf("THOAT CHUONG TRINH\nBye bye...\n");
+            break;
+        default:
+            printf("Chi chon gia tri tu 1 den 4 thoi nhe!\n");
         }
+        system("pause");
     }   while(luachon!=4);
 }
