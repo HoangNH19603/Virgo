@@ -9,7 +9,7 @@ typedef struct {
 } Date;
 
 //create struct students
-typedef struct {    //struct students
+typedef struct {
     char name[50];
     char id[10];
     Date date;
@@ -102,7 +102,7 @@ void main(){
                 printf("\nNhap vao so hoc sinh: ");
                 scanf("%d", &number_of_students);
             } while(number_of_students<2);
-            students_array = (students *)malloc(number_of_students * sizeof(students));
+            students_array = (students *)malloc(number_of_students * sizeof(students));     //cap phat bo nho cho students_array
             for (i = 0; i < number_of_students; i++) {
                 printf("Nhap vao thong tin sinh vien thu %d\n", i + 1);
                 students_array[i] = nhapthongtin();
