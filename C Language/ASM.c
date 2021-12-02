@@ -1,8 +1,69 @@
 // xay dung menu 10 chuc nang, lap di lap lai den khi an so 10 de thoat, clear man hinh moi khi hoan thanh 1 chuc nang
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int item, count=0;
+int item, jtem, count=0;
+typedef struct{
+    int ngay, thang, nam;
+}   date;
+typedef struct{
+    char hoten[50], mssv[10], hocluc[20];
+    float diem;
+    date ngay_sinh;
+}   students;
+students *hoc_sinh;
+
+students nhap_thong_tin(){
+    students student;
+    fflush(stdin);
+    printf("\nNhap ho ten: ");
+    gets(student.hoten);
+    printf("\nNhap MSSV: ");
+    gets(student.mssv);
+    printf("\nNhap diem: ");
+    do{
+        scanf("%f", &student.diem);
+        printf("\nNhap ngay sinh: ");
+    }   while (student.diem<0 || student.diem>10);
+    if (student.diem>=9)
+        strcpy(student.hocluc, "Xuat sac");
+    else if (student.diem>=8)
+        strcpy(student.hocluc, "Gioi");
+    else if (student.diem>=6.5)
+        strcpy(student.hocluc, "Kha");
+    else if (student.diem>=5)
+        strcpy(student.hocluc, "Trung binh");
+    else
+        strcpy(student.hocluc, "Yeu");
+    scanf("%d", &student.ngay_sinh.ngay);
+    printf("\nNhap thang sinh: ");
+    scanf("%d", &student.ngay_sinh.thang);
+    printf("\nNhap nam sinh: ");
+    scanf("%d", &student.ngay_sinh.nam);
+    return student;
+}
+
+void sort(students hoc_sinh[], int n){
+    students temp;
+    for (item=0; item<n-1; item++){
+        for (jtem=item+1; jtem<n; jtem++){
+            if (hoc_sinh[item].diem<hoc_sinh[jtem].diem){
+                temp = hoc_sinh[item];
+                hoc_sinh[item] = hoc_sinh[jtem];
+                hoc_sinh[jtem] = temp;
+            }
+        }
+    }
+}
+
+void print_student(students student){
+    printf("\nHo ten: %s", student.hoten);
+    printf("\nMSSV: %s", student.mssv);
+    printf("\nDiem: %.2f", student.diem);
+    printf("\nHoc luc: %s", student.hocluc);
+    printf("\nNgay sinh: %d/%d/%d", student.ngay_sinh.ngay, student.ngay_sinh.thang, student.ngay_sinh.nam);
+}
 
 void SNT_SCP(){
     int snt_scp;
@@ -88,7 +149,7 @@ void dien(int kwh){
 }
 
 int main(){
-    int lua_chon, num1, num2, batdau, ketthuc, kwh;
+    int lua_chon, num1, num2, batdau, ketthuc, kwh, so_hoc_sinh;
     do{
         system("cls");
         printf("<---------------<< MENU >>--------------->\n");
@@ -101,7 +162,7 @@ int main(){
         printf("Chuc nang 7: sap xep thong tin sinh vien\n");
         printf("Chuc nang 8: xay dung game FPOLY LOTT\n");
         printf("Chuc nang 9: xay dung chuong trinh tinh toan phan so\n");
-        printf("An phim 10 de thoat\n");
+        printf("An phim 0 de thoat\n");
         printf("<---------------------------------------->\n");
         printf("Nhap lua chon: ");
         scanf("%d", &lua_chon);
@@ -133,6 +194,21 @@ int main(){
             case 5:
                 printf("Chuc nang 5: doi tien te\n");
                 break;
+            case 7:
+                printf("Chuc nang 7: sap xep thong tin sinh vien\n");
+                printf("Nhap vao so hoc sinh: ");
+                scanf("%d", &so_hoc_sinh);
+                hoc_sinh = (students*)malloc(so_hoc_sinh*sizeof(students));
+                for (item = 0; item < so_hoc_sinh; item++){
+                    printf("Nhap thong tin cho sinh vien thu %d\n", item+1);
+                    hoc_sinh[item] = nhap_thong_tin();
+                }
+                sort(hoc_sinh, so_hoc_sinh);
+                for (item = 0; item < so_hoc_sinh; item++){
+                    printf("Thong tin sinh vien thu %d\n", item+1);
+                    print_student(hoc_sinh[item]);
+                }
+                break;
             case 10:
                 printf("Thoat chuong trinh...\n");
                 break;
@@ -141,6 +217,6 @@ int main(){
                 break;
         }
         system("pause");
-    }   while (lua_chon != 10);
+    }   while (lua_chon != 0);
     return 0;
 }
