@@ -1,7 +1,7 @@
-// xay dung menu 10 chuc nang, lap di lap lai den khi an so 10 de thoat, clear man hinh moi khi hoan thanh 1 chuc nang
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 int item, jtem, count=0;
 typedef struct{
@@ -148,8 +148,84 @@ void dien(int kwh){
     else printf("So dien tieu thu nho hon 0\n");
 }
 
+void doitien(int tien){
+    int _200k=0, _100k=0, _50k=0, _20k=0, _10k=0, _5k=0, _2k=0, _1k=0;
+    do {
+        if (tien >= 500)    //menh gia 500
+        {
+            _200k = tien/200;
+            tien %= 200;
+            // printf("%d to 200k\n", _200k);
+            if (tien >= 100)
+            {
+                _100k = tien/100;
+                tien %= 100;
+                // printf("%d to 100k\n", _100k);
+            }
+        }
+        else if (tien >= 200)    //menh gia 200
+        {
+            _100k = tien/100;
+            tien %= 100;
+        }
+        else if (tien >= 100)     //menh gia 100
+        {
+            _50k = tien/50;
+            tien %= 50;
+        }
+        else if (tien >= 50)     //menh gia 50
+        {
+            _20k = tien/20;
+            tien %= 20;
+            if (tien >= 10)
+            {
+                _10k = tien/10;
+                tien %= 10;
+            }
+        }
+        else if (tien >= 20)     //menh gia 20
+        {
+            _10k = tien/10;
+            tien %= 10;
+        }
+        else if (tien >= 10)      //menh gia 10
+        {
+            _5k = tien/5;
+            tien %= 5;
+        }
+        else if (tien > 2)     //menh gia 5
+        {
+            _2k = tien/2;
+            tien %= 2;
+        }
+        else if (tien >= 1)
+        {
+            _1k = tien/1;
+            tien %= 1;
+        }
+    }   while (tien != 0);
+    printf("%d to 200k\n%d to 100k\n%d to 50k\n%d to 20k\n%d to 10k\n%d to 5k\n%d to 2k\n%d to 1k\n", _200k, _100k, _50k, _20k, _10k, _5k, _2k, _1k);
+}
+
+void game(int num1, int num2){
+    int rand1 = rand() % 15;
+    int rand2 = rand() % 15;
+    if ((num1 == rand1 && num2 == rand2) || (num1 == rand2 && num2 == rand1)){
+        printf("Chuc mung ban duoc giai nhat\n");
+    }
+    else if (num1 == rand1 || num2 == rand2 || num1 == rand2 || num2 == rand1)
+    {
+        printf("Chuc mung ban duoc giai nhi\n");
+    }
+    else
+    {
+        printf("Ban da doan sai\n");
+    }
+    printf("rand1 = %d\nrand2 = %d\nnum1 = %d\nnum2 = %d", rand1, rand2, num1, num2);
+}
+
 int main(){
-    int lua_chon, num1, num2, batdau, ketthuc, kwh, so_hoc_sinh;
+    int lua_chon, num1, num2, so_hoc_sinh;
     do{
         system("cls");
         printf("<---------------<< MENU >>--------------->\n");
@@ -180,19 +256,24 @@ int main(){
             case 3:
                 printf("Chuc nang 3: tinh hoa don tien karaoke\n");
                 printf("Nhap vao gio bat dau (12h -> 23h): ");
-                scanf("%d", &batdau);
+                scanf("%d", &num1);
                 printf("Nhap vao gio ket thuc (bat dau < ket thuc < 23h: ");
-                scanf("%d", &ketthuc);
-                karaoke(batdau, ketthuc);
+                scanf("%d", &num2);
+                karaoke(num1, num2);
                 break;
             case 4:
                 printf("Chuc nang 4: tinh hoa don tien dien\n");
                 printf("Nhap vao so kwh tieu thu: ");
-                scanf("%d", &kwh);
-                dien(kwh);
+                scanf("%d", &num1);
+                dien(num1);
                 break;
             case 5:
                 printf("Chuc nang 5: doi tien te\n");
+                do{
+                    printf("Nhap vao so tien can doi: ");
+                    scanf("%d", &num1);
+                }   while (num1 < 0);
+                doitien(num1);
                 break;
             case 7:
                 printf("Chuc nang 7: sap xep thong tin sinh vien\n");
@@ -208,6 +289,12 @@ int main(){
                     printf("Thong tin sinh vien thu %d\n", item+1);
                     print_student(hoc_sinh[item]);
                 }
+                break;
+            case 8:
+                printf("Chuc nang 8: xay dung game FPOLY LOTT\n");
+                printf("Nhap vao 2 so: ");
+                scanf("%d %d", &num1, &num2);
+                game(num1, num2);
                 break;
             case 10:
                 printf("Thoat chuong trinh...\n");
