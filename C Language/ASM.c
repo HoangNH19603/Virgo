@@ -14,6 +14,7 @@ typedef struct{
 }   students;
 students *hoc_sinh;
 
+//bai 7 nhap thong tin
 students nhap_thong_tin(){
     students student;
     fflush(stdin);
@@ -44,6 +45,7 @@ students nhap_thong_tin(){
     return student;
 }
 
+//bai 7 sap xep thong tin
 void sort(students hoc_sinh[], int n){
     students temp;
     for (item=0; item<n-1; item++){
@@ -57,6 +59,7 @@ void sort(students hoc_sinh[], int n){
     }
 }
 
+//bai 7 in ra thong tin
 void print_student(students student){
     printf("\nHo ten: %s", student.hoten);
     printf("\nMSSV: %s", student.mssv);
@@ -65,6 +68,7 @@ void print_student(students student){
     printf("\nNgay sinh: %d/%d/%d", student.ngay_sinh.ngay, student.ngay_sinh.thang, student.ngay_sinh.nam);
 }
 
+//bai 1
 void SNT_SCP(){
     int snt_scp;
     printf("\nNhap vao 1 so: ");
@@ -84,6 +88,7 @@ void SNT_SCP(){
     if(count==0)	printf("%d khong phai so chinh phuong\n", snt_scp);
 }
 
+//bai 2
 void bcnn_ucln(int a, int b){
     int ab=a*b;
     while(a!=b){
@@ -98,6 +103,7 @@ void bcnn_ucln(int a, int b){
     printf("Boi so chung nho nhat la %d\n", ab/a);
 }
 
+//bai 3
 void karaoke(int batdau, int ketthuc){
     int thoigian;   float tien_karaoke;
     if(batdau>=12 && ketthuc<=23 && batdau<ketthuc){
@@ -119,6 +125,7 @@ void karaoke(int batdau, int ketthuc){
     }
 }
 
+//bai 4
 void dien(int kwh){
     int tiendien;
     if(kwh>0){
@@ -148,6 +155,7 @@ void dien(int kwh){
     else printf("So dien tieu thu nho hon 0\n");
 }
 
+//bai 5
 void doitien(int tien){
     int _200k=0, _100k=0, _50k=0, _20k=0, _10k=0, _5k=0, _2k=0, _1k=0;
     do {
@@ -207,6 +215,7 @@ void doitien(int tien){
     printf("%d to 200k\n%d to 100k\n%d to 50k\n%d to 20k\n%d to 10k\n%d to 5k\n%d to 2k\n%d to 1k\n", _200k, _100k, _50k, _20k, _10k, _5k, _2k, _1k);
 }
 
+//bai 8
 void game(int num1, int num2){
     int rand1 = rand() % 15;
     int rand2 = rand() % 15;
@@ -224,6 +233,41 @@ void game(int num1, int num2){
     printf("rand1 = %d\nrand2 = %d\nnum1 = %d\nnum2 = %d", rand1, rand2, num1, num2);
 }
 
+//bai 6
+void vaytragop(int vay){
+    int lai, goc = vay/12;
+    printf("%6s %15s %15s %20s %20s\n", "ky han", "lai phai tra", "goc phai tra", "so tien phai tra", "so tien con lai");
+    for (item = 1; item <= 12; item++){
+        lai = vay*5/100;
+        vay -= goc;
+        printf("%3d %15d %15d %18d %23d\n", item, lai, goc, goc+lai, vay);
+    }
+}
+
+//bai 9
+void tinhphanso(){
+    float phanso1, phanso2, a1, a2, b1, b2;
+    printf("Nhap vao tu so cua a: ");
+    scanf("%d", &a1);
+    printf("Nhap vao mau so cua a: ");
+    scanf("%d", &a2);
+    printf("Nhap vao tu so cua b: ");
+    scanf("%d", &b1);
+    printf("Nhap vao mau so cua b: ");
+    scanf("%d", &b2);
+    if (a2 == 0 || b2 == 0)
+    {
+        printf("Mau so phai khac 0 nha!");
+        return;
+    }
+    phanso1 = (float) a1/a2;
+    phanso2 = (float) b1/b2;
+    printf("Tong cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1+phanso2);
+    printf("Hieu cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1-phanso2);
+    printf("Tich cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1*phanso2);
+    printf("Thuong cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1/phanso2);
+}
+
 int main(){
     int lua_chon, num1, num2, so_hoc_sinh;
     do{
@@ -234,14 +278,15 @@ int main(){
         printf("Chuc nang 3: tinh hoa don tien karaoke\n");
         printf("Chuc nang 4: tinh hoa don tien dien\n");
         printf("Chuc nang 5: doi tien te\n");
-        printf("Chuc nang 6: tinh lai xuat vay ngan hang tra gop\n");
+        printf("Chuc nang 6: tinh lai suat vay ngan hang tra gop\n");
         printf("Chuc nang 7: sap xep thong tin sinh vien\n");
         printf("Chuc nang 8: xay dung game FPOLY LOTT\n");
-        printf("Chuc nang 9: xay dung chuong trinh tinh toan phan so\n");
+        printf("Chuc nang 9: chuong trinh tinh toan phan so\n");
         printf("An phim 0 de thoat\n");
         printf("<---------------------------------------->\n");
         printf("Nhap lua chon: ");
         scanf("%d", &lua_chon);
+        system("cls");
         switch(lua_chon){
             case 1:
                 printf("Chuc nang 1: kiem tra so nguyen to, so chinh phuong\n");
@@ -275,6 +320,17 @@ int main(){
                 }   while (num1 < 0);
                 doitien(num1);
                 break;
+            case 6:
+                printf("Chuc nang 6: tinh lai suat vay ngan hang tra gop\n");
+                printf("Nhap vao so tien can vay: ");
+                scanf("%d", &num1);
+                if (num1 <= 0)
+                {
+                    printf("So tien vay tra gop phai lon hon 0");
+                    break;
+                }
+                vaytragop(num1);
+                break;
             case 7:
                 printf("Chuc nang 7: sap xep thong tin sinh vien\n");
                 printf("Nhap vao so hoc sinh: ");
@@ -296,7 +352,10 @@ int main(){
                 scanf("%d %d", &num1, &num2);
                 game(num1, num2);
                 break;
-            case 10:
+            case 9:
+                printf("Chuc nang 9: chuong trinh tinh toan phan so\n");
+                tinhphanso();
+            case 0:
                 printf("Thoat chuong trinh...\n");
                 break;
             default:
