@@ -81,7 +81,7 @@ void thongbao(){
     printf("CHUA NHAP THONG TIN SINH VIEN, AN PHIM 1 DE NHAP LAI!\n");
 }
 
-void main(){
+int main(){
     int number_of_students=0, luachon;
     char id[10];
     do
@@ -142,4 +142,5 @@ void main(){
         }
         system("pause");
     }   while(luachon!=4);
+	return 0;
 }
