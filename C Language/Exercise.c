@@ -14,6 +14,10 @@ typedef struct
 	date ngaysinh;
 }	sinhvien;
 
+sinhvien sv[50];
+
 int main(){
+	fgets(sv[0].hoten, 50, stdin);
+	printf("%s", sv[0].hoten);
 	return 0;
 }
