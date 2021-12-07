@@ -12,6 +12,7 @@ This is where I'm learning to code ><
   ... will be further revised in the future
 
 # Resource for this course:
+  * https://www.educative.io/
   * https://www.programiz.com/
   * https://www.w3schools.com/
   * https://www.tutorialspoint.com/index.htm

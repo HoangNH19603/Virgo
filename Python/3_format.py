@@ -1,6 +1,3 @@
-from multiprocessing.sharedctypes import Value
-
-
 print ('-'*15)  # in '-' 15 lan
 
 # dung ham Format de dinh dang du lieu
