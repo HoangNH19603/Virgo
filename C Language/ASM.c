@@ -73,11 +73,13 @@ void SNT_SCP(){
     int snt_scp;
     printf("\nNhap vao 1 so: ");
     scanf("%d", &snt_scp);
-    for(item=2; item<snt_scp; item++){
+    for(item=3; item<snt_scp; item++){
         if(snt_scp % item == 0)	count++;
     }
-    if(count==0 && snt_scp<2)	printf("%d la so nguyen to\n", snt_scp);
-    else	printf("%d khong phai so nguyen to\n", snt_scp);
+    if(count == 0 && snt_scp > 1)	printf("%d la so nguyen to\n", snt_scp);
+    else{
+        printf("%d khong phai so nguyen to\n", snt_scp);
+    }
     count=0;
     for(item=1; item<=snt_scp; item++){
         if(item*item == snt_scp){
@@ -265,7 +267,11 @@ void tinhphanso(){
     printf("Tong cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1+phanso2);
     printf("Hieu cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1-phanso2);
     printf("Tich cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1*phanso2);
-    printf("Thuong cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1/phanso2);
+    if (phanso2 !=0){
+        printf("Thuong cua %.0f/%.0f + %.0f/%.0f la: %f\n", a1, a2, b1, b2, phanso1/phanso2);
+        return;
+    }
+    printf("Phan so thu 2 = 0, khong co phep chia cho 0\n");
 }
 
 int main(){
@@ -355,6 +361,7 @@ int main(){
             case 9:
                 printf("Chuc nang 9: chuong trinh tinh toan phan so\n");
                 tinhphanso();
+                break;
             case 0:
                 printf("Thoat chuong trinh...\n");
                 break;
