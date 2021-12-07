@@ -2,7 +2,8 @@
 This project is for learning purposes only!
 
 * This directory includes:
-    - C++ 
+    - C/C++
+    - C#
     - Python
     - Java
     - Html
