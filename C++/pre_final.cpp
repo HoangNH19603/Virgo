@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <stdlib.h>
 
@@ -56,15 +57,15 @@ void ndsnv(nhanvien arr[], int end, int start = 0)
 {
     for (i = start; i < end; i++)
     {
-				do
-				{
-		        cout << "\nNhap thong tin nhan vien thu " << i + 1 << endl;
-		        nhap_tt(arr[i]);
-						if (tim_msnv(arr, i, arr[i].msnv))
-						{
-								cout << "Ma nhan vien da ton tai, xin moi nhap lai...\n" << endl;
-						}
-				} while (tim_msnv(arr, i, arr[i].msnv));
+        do
+        {
+        cout << "\nNhap thong tin nhan vien thu " << i + 1 << endl;
+        nhap_tt(arr[i]);
+                if (tim_msnv(arr, i, arr[i].msnv))
+                {
+                        cout << "Ma nhan vien da ton tai, xin moi nhap lai...\n" << endl;
+                }
+        } while (tim_msnv(arr, i, arr[i].msnv));
     }
 }
 
@@ -139,48 +140,95 @@ void them_dsnv(nhanvien nv[], int &n, int end)
 // ham tim msnv
 bool tim_msnv(nhanvien arr[], int n, string key)
 {
-		int count = 0;
-		for (i = 0; i < n; i++)
-		{
-				if (key.compare(arr[i].msnv) == 0)
-				{
-						count++;
-				}
-		}
-		if (count != 0)
-		{
-				return true;
-		}
-		return false;
-}// neu tim thay msnv tra ve true, neu khong tim thay tra ve false
+    int count = 0;
+    for (i = 0; i < n; i++)
+    {
+        if (key.compare(arr[i].msnv) == 0)
+        {
+            count++;
+        }
+    }
+    if (count != 0)
+    {
+        return true;
+    }
+    return false;
+}   // neu tim thay msnv tra ve true, neu khong tim thay tra ve false
 
 // ham xac dinh vi tri nhan vien trong mang
 int tim_vi_tri_nv_trong_mang(nhanvien arr[], int n, string key)
 {
-		for (i = 0; i < n; i++)
-		{
-				if (key.compare(arr[i].msnv) == 0)
-				{
-						return i;
-				}
-		}
-		return -1;
-}// tra ve vi tri cua phan tu neu tim thay. Neu khong, tra ve -1
+    for (i = 0; i < n; i++)
+    {
+        if (key.compare(arr[i].msnv) == 0)
+        {
+            return i;
+        }
+    }
+    return -1;
+}   // tra ve vi tri cua phan tu neu tim thay. Neu khong, tra ve -1
 
 // xoa nhan vien theo msnv
 void xoa_msnv(nhanvien arr[], int &n, string key)
 {
-		if (tim_msnv(arr, n, key))
-		{
-				for (i = tim_vi_tri_nv_trong_mang(arr, n, key); i < n; i++)
-				{
-						arr[i] = arr[i + 1];
-				}
-				n--;
-				cout << "Da xoa nhan vien " << key << endl;
-				return;
-		}
-		cout << "Khong tim thay nhan vien " << key << endl;
+    if (tim_msnv(arr, n, key))
+    {
+        for (i = tim_vi_tri_nv_trong_mang(arr, n, key); i < n; i++)
+        {
+                arr[i] = arr[i + 1];
+        }
+        n--;
+        cout << "Da xoa nhan vien " << key << endl;
+        return;
+    }
+    cout << "Khong tim thay nhan vien " << key << endl;
+}
+
+// xuat file danh sach nhan vien
+void xuat_file(nhanvien arr[], int n)
+{
+    ofstream fout;
+    fout.open("employee.dat", ios::out);
+    if (fout.fail())
+    {
+        cout << "Khong mo duoc file" << endl;
+        return;
+    }
+    fout << n << endl;
+    for (i = 0; i < n; i++)
+    {
+        fout << arr[i].ten << ";" << arr[i].msnv << ";" << endl;
+        fout << arr[i].luong_ngay << " " << arr[i].ngay_cong << " " << arr[i].luong_thang << " " << arr[i].thuong << endl;
+        // fout << arr[i].ngay_cong << endl;
+        // fout << arr[i].luong_thang << endl;
+        // fout << arr[i].thuong << endl;
+    }
+    fout.close();
+    cout << "Da xuat file thanh cong" << endl;
+}
+
+// nhap file danh sach nhan vien
+void nhap_file(nhanvien arr[], int &n)
+{
+	ifstream fin;
+	fin.open("employee.dat", ios_base::in);
+	if (fin.fail())
+	{
+			cout << "Khong mo duoc file" << endl;
+			return;
+	}
+	fin >> n;
+	for (i = 0; i < n; i++)
+	{
+		getline(fin, arr[i].ten, ';');
+		getline(fin, arr[i].msnv, ';');
+		fin >> arr[i].luong_ngay;
+		fin >> arr[i].ngay_cong;
+		fin >> arr[i].luong_thang;
+		fin >> arr[i].thuong;
+	}
+	fin.close();
+	cout << "Da nhap file thanh cong" << endl;
 }
 
 int main()
@@ -242,20 +290,33 @@ int main()
             {
                 cout << "5. Them vao danh sach nhan vien" << endl;
                 //goi ham
-								cout << "Nhap vao so luong muon them: ";
-								cin >> them;
-								them_dsnv(nv, soluong, them);
-								// soluong += them;
+                cout << "Nhap vao so luong muon them: ";
+                cin >> them;
+                them_dsnv(nv, soluong, them);
+                // soluong += them;
                 break;
             }
-						case 6:
+            case 6:
+            {
+                cout << "6. Xoa nhan vien theo msnv" << endl;
+                cout << "Nhap vao msnv: ";
+                cin >> msnv;
+                cout << tim_vi_tri_nv_trong_mang(nv, soluong, msnv);
+                xoa_msnv(nv, soluong, msnv);
+                break;
+            }
+            case 7:
+            {
+                cout << "7. Xuat danh sach nhan vien" << endl;
+                xuat_file(nv, soluong);
+                break;
+            }
+						case 8:
 						{
-								cout << "6. Xoa nhan vien theo msnv" << endl;
-								cout << "Nhap vao msnv: ";
-								cin >> msnv;
-								cout << tim_vi_tri_nv_trong_mang(nv, soluong, msnv);
-								xoa_msnv(nv, soluong, msnv);
-								break;
+							cout << "8. Nhap/in danh sach nhan vien" << endl;
+							nhap_file(nv, soluong);
+							xdsnv(nv, soluong);
+							break;
 						}
             default:
                 cout << "Cyka blyat!!" << endl;
