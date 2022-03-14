@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-14T01:43:38.333Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="IBOSl-5ZOwTdX5I2Qd_f" version="17.1.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-03-14T01:43:45.173Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="SxnakHBDJw9ovoMacwrI" version="17.1.2" type="github" pages="2">
   <diagram id="gFD7RJoAOSjZhMeLjgJq" name="Page-1">
     <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -170,28 +170,28 @@
         <mxCell id="Gp6gQK7P-9FBYORR35q8-0" />
         <mxCell id="Gp6gQK7P-9FBYORR35q8-1" parent="Gp6gQK7P-9FBYORR35q8-0" />
         <mxCell id="Gp6gQK7P-9FBYORR35q8-2" value="Nhân viên&lt;br&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="680" y="160" width="100" height="40" as="geometry" />
+          <mxGeometry x="700" y="160" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-3" value="Văn phòng&lt;br&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="410" y="40" width="100" height="40" as="geometry" />
+          <mxGeometry x="430" y="40" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-4" value="Chủ sở hữu" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="410" y="160" width="100" height="40" as="geometry" />
+          <mxGeometry x="430" y="160" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-5" value="Sản phẩm&lt;br&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="140" y="160" width="100" height="40" as="geometry" />
+          <mxGeometry x="160" y="160" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-6" value="Mã số vp&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="180" y="40" width="100" height="40" as="geometry" />
+          <mxGeometry x="200" y="40" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-7" value="Địa điểm" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="640" y="40" width="100" height="40" as="geometry" />
+          <mxGeometry x="660" y="40" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-8" value="Mã số BDS" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry y="240" width="100" height="40" as="geometry" />
+          <mxGeometry x="20" y="240" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gp6gQK7P-9FBYORR35q8-9" value="Địa chỉ&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Gp6gQK7P-9FBYORR35q8-1">
-          <mxGeometry x="140" y="280" width="100" height="40" as="geometry" />
+          <mxGeometry x="160" y="280" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
