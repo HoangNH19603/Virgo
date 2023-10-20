@@ -20,9 +20,8 @@ def main():
 
     print(add2(2, 3))
 
-    let Iam = People(name, 17)
-    Iam.ageIncrement()
-    Iam.display
+    let Iam = Person(name.to_string(), 17)
+    Iam.display()
 # let (immutable), var (mutable), alias (final)
 
 # The fn declaration enforces strongly-typed and memory-safe behaviors, while def provides Python-style dynamic behaviors.
@@ -47,7 +46,7 @@ fn add2(x: Int, y: Int) -> Int:
     return x + y
 
 # structures
-struct People:
+struct Person:
     var name: String
     var age: Int
 
@@ -55,8 +54,6 @@ struct People:
         self.name = name
         self.age = age
 
-    # fn ageIncrement(self):
-        # self.age += 1
-
     fn display(self):
         print(self.name, self.age)
+
