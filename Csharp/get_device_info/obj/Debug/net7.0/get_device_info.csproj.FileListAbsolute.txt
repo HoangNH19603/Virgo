@@ -1,0 +1,5 @@
+/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/obj/Debug/net7.0/get_device_info.csproj.AssemblyReference.cache
+/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/obj/Debug/net7.0/get_device_info.GeneratedMSBuildEditorConfig.editorconfig
+/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/obj/Debug/net7.0/get_device_info.AssemblyInfoInputs.cache
+/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/obj/Debug/net7.0/get_device_info.AssemblyInfo.cs
+/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/obj/Debug/net7.0/get_device_info.csproj.CoreCompileInputs.cache

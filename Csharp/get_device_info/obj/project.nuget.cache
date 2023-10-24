@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "Dt9pfOXet6VmvsoDPwCc6FoD3wsJ475XVyatlNvVXESjAJRJ3YfVBvurz7VOg27bltp3ai6tU8z23atHrndljg==",
+  "dgSpecHash": "+zPJd0dWxcxgT+I0jmCr6PnhSlaz3wUO1LWo4uWkZys9Dl0lT0GW0x36arL8rYiWaOjWlPeTbd3K8hlM+ev+kQ==",
   "success": true,
-  "projectFilePath": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
+  "expectedPackageFiles": [
+    "/home/hoangadminvjppro/.nuget/packages/hardware.info/100.0.0/hardware.info.100.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/microsoft.win32.systemevents/7.0.0/microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.codedom/7.0.0/system.codedom.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.configuration.configurationmanager/7.0.0/system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.diagnostics.eventlog/7.0.0/system.diagnostics.eventlog.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.diagnostics.performancecounter/7.0.0/system.diagnostics.performancecounter.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.drawing.common/7.0.0/system.drawing.common.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.management/7.0.0/system.management.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.security.cryptography.protecteddata/7.0.0/system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.security.permissions/7.0.0/system.security.permissions.7.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/home/hoangadminvjppro/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
