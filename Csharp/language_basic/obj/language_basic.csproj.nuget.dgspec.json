@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj": {}
+    "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj": {}
   },
   "projects": {
-    "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj": {
+    "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
-        "projectName": "get_device_info",
-        "projectPath": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
+        "projectUniqueName": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
+        "projectName": "language_basic",
+        "projectPath": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
         "packagesPath": "/home/hoanghn/.nuget/packages/",
-        "outputPath": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/obj/",
+        "outputPath": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hoanghn/.nuget/NuGet/NuGet.Config"
@@ -37,12 +37,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Hardware.Info": {
-              "target": "Package",
-              "version": "[100.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

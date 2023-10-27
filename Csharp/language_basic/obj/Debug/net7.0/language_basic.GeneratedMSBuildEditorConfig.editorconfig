@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = get_device_info
-build_property.ProjectDir = /home/hoanghn/Documents/Virgo/Csharp/get_device_info/
+build_property.RootNamespace = language_basic
+build_property.ProjectDir = /home/hoanghn/Documents/Virgo/Csharp/language_basic/

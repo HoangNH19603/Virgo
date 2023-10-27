@@ -805,19 +805,19 @@
     ]
   },
   "packageFolders": {
-    "/home/hoangadminvjppro/.nuget/packages/": {}
+    "/home/hoanghn/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
+      "projectUniqueName": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
       "projectName": "get_device_info",
-      "projectPath": "/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
-      "packagesPath": "/home/hoangadminvjppro/.nuget/packages/",
-      "outputPath": "/home/hoangadminvjppro/Documents/Virgo/Csharp/get_device_info/obj/",
+      "projectPath": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/get_device_info.csproj",
+      "packagesPath": "/home/hoanghn/.nuget/packages/",
+      "outputPath": "/home/hoanghn/Documents/Virgo/Csharp/get_device_info/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/hoangadminvjppro/.nuget/NuGet/NuGet.Config"
+        "/home/hoanghn/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -862,7 +862,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/hoangadminvjppro/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
       }
     }
   }

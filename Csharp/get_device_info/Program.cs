@@ -1,4 +1,5 @@
-﻿using 
+﻿using System.Net.NetworkInformation;
+using Hardware.Info;
 
 class Program
 {
@@ -42,7 +43,7 @@ class Program
                 Console.WriteLine(cpuCore);
         }
 
-        Console.ReadLine();
+        Console.Read();
 
         foreach (var drive in hardwareInfo.DriveList)
         {
@@ -57,7 +58,7 @@ class Program
             }
         }
 
-        Console.ReadLine();
+        Console.Read();
 
         foreach (var hardware in hardwareInfo.KeyboardList)
             Console.WriteLine(hardware);
@@ -86,7 +87,7 @@ class Program
         foreach (var hardware in hardwareInfo.VideoControllerList)
             Console.WriteLine(hardware);
 
-        Console.ReadLine();
+        Console.Read();
 
         foreach (var address in HardwareInfo.GetLocalIPv4Addresses(NetworkInterfaceType.Ethernet, OperationalStatus.Up))
             Console.WriteLine(address);
@@ -106,6 +107,6 @@ class Program
         foreach (var address in HardwareInfo.GetLocalIPv4Addresses())
             Console.WriteLine(address);
 
-        Console.ReadLine();
+        Console.Read();
     }
 }
