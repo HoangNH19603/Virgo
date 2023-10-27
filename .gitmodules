@@ -1,0 +1,3 @@
+[submodule "Csharp/Csharp/csharp-notebooks"]
+	path = Csharp/Csharp/csharp-notebooks
+	url = https://github.com/dotnet/csharp-notebooks.git
