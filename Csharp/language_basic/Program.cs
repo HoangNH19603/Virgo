@@ -8,6 +8,7 @@ do {
     userInput = Console.ReadLine();
     try {
         userChoice = short.Parse(userInput!);
+        if (userChoice.GetType() == typeof(short)) break;
     } catch (FormatException e) {
         Console.WriteLine(e.StackTrace);
     } finally {
@@ -23,6 +24,8 @@ switch(userChoice) {
     case 1:
         Console.WriteLine("Day 1!");
         basicOfStrings();
+        Console.WriteLine();
+        stringFunctions();
         break;
     default:
         Console.Error.WriteLine("Invalid choice!");

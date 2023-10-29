@@ -56,4 +56,3 @@ struct Person:
 
     fn display(self):
         print(self.name, self.age)
-
