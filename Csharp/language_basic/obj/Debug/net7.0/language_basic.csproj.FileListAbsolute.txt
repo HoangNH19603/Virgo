@@ -3,7 +3,6 @@
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/bin/Debug/net7.0/language_basic.runtimeconfig.json
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/bin/Debug/net7.0/language_basic.dll
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/bin/Debug/net7.0/language_basic.pdb
-/home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.csproj.AssemblyReference.cache
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.GeneratedMSBuildEditorConfig.editorconfig
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.AssemblyInfoInputs.cache
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.AssemblyInfo.cs
@@ -20,3 +19,4 @@
 /home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.dll
 /home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/refint/language_basic.dll
 /home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.pdb
+/home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.sourcelink.json

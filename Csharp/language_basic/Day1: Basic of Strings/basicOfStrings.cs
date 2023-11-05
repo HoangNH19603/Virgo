@@ -20,9 +20,9 @@ namespace Day1 {
             string line3 = "     Well, I found a girl, beautiful and sweet     ";
 
             Console.WriteLine($"{line1}");
-            Console.WriteLine($"Line 1 contain \'love\'{line1.Contain("love")}");
+            Console.WriteLine($"Line 1 contain \'love\'{line1.Contains("love")}");
             Console.WriteLine($"{line2}");
-            Console.WriteLine($"Line 2 start with \'Darling\': {line2.StartWith("Darling")} and end with \'me\': {line2.EndWith("me")}");
+            Console.WriteLine($"Line 2 start with \'Darling\': {line2.StartsWith("Darling")} and end with \'me\': {line2.EndsWith("me")}");
             Console.WriteLine($"{line3}");
             Console.WriteLine($"Line 3 trimmed: {line3.Trim()}");
         }

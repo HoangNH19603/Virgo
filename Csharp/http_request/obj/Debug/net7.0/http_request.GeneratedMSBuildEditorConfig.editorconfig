@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = http_request
-build_property.ProjectDir = /home/lord/Documents/Virgo/Csharp/http_request/
+build_property.ProjectDir = /home/hoanghn/Documents/Virgo/Csharp/http_request/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

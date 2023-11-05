@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JbJEfdrGZEydIGeBFjm/wlKoVjwFvnroBsoonffTDy5GAMZPIHf2R1bni/DQDymULyI4ulpmQRyj07E/iaN13g==",
+  "dgSpecHash": "PG1PLpdp9yX2PvCakquV8EHrA847v6ttWp0YukOEqrhdw8uqXOx82iwOhKUEnUv2+DtQ2U1LT5AQ84zHiF+uGA==",
   "success": true,
-  "projectFilePath": "/home/lord/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
+  "expectedPackageFiles": [
+    "/home/hoanghn/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.12/microsoft.netcore.app.host.linux-x64.7.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
