@@ -13,3 +13,10 @@
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.pdb
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.genruntimeconfig.cache
 /home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/ref/language_basic.dll
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.GeneratedMSBuildEditorConfig.editorconfig
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.AssemblyInfoInputs.cache
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.AssemblyInfo.cs
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.csproj.CoreCompileInputs.cache
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.dll
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/refint/language_basic.dll
+/home/lord/Documents/Virgo/Csharp/language_basic/obj/Debug/net7.0/language_basic.pdb

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj": {}
+    "/home/lord/Documents/Virgo/Csharp/language_basic/language_basic.csproj": {}
   },
   "projects": {
-    "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj": {
+    "/home/lord/Documents/Virgo/Csharp/language_basic/language_basic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
+        "projectUniqueName": "/home/lord/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
         "projectName": "language_basic",
-        "projectPath": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
-        "packagesPath": "/home/hoanghn/.nuget/packages/",
-        "outputPath": "/home/hoanghn/Documents/Virgo/Csharp/language_basic/obj/",
+        "projectPath": "/home/lord/Documents/Virgo/Csharp/language_basic/language_basic.csproj",
+        "packagesPath": "/home/lord/.nuget/packages/",
+        "outputPath": "/home/lord/Documents/Virgo/Csharp/language_basic/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/hoanghn/.nuget/NuGet/NuGet.Config"
+          "/home/lord/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/lord/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }

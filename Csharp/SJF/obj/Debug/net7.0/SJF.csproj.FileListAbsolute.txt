@@ -27,3 +27,17 @@
 /home/hoangadminvjppro/Documents/Virgo/Csharp/SJF/bin/Debug/net7.0/SJF.pdb
 /home/hoangadminvjppro/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.genruntimeconfig.cache
 /home/hoangadminvjppro/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/ref/SJF.dll
+/home/lord/Documents/Virgo/Csharp/SJF/bin/Debug/net7.0/SJF
+/home/lord/Documents/Virgo/Csharp/SJF/bin/Debug/net7.0/SJF.deps.json
+/home/lord/Documents/Virgo/Csharp/SJF/bin/Debug/net7.0/SJF.runtimeconfig.json
+/home/lord/Documents/Virgo/Csharp/SJF/bin/Debug/net7.0/SJF.dll
+/home/lord/Documents/Virgo/Csharp/SJF/bin/Debug/net7.0/SJF.pdb
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.GeneratedMSBuildEditorConfig.editorconfig
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.AssemblyInfoInputs.cache
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.AssemblyInfo.cs
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.csproj.CoreCompileInputs.cache
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.dll
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/refint/SJF.dll
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.pdb
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/SJF.genruntimeconfig.cache
+/home/lord/Documents/Virgo/Csharp/SJF/obj/Debug/net7.0/ref/SJF.dll

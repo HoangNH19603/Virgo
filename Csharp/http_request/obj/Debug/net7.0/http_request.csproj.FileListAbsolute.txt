@@ -1,0 +1,14 @@
+/home/lord/Documents/Virgo/Csharp/http_request/bin/Debug/net7.0/http_request
+/home/lord/Documents/Virgo/Csharp/http_request/bin/Debug/net7.0/http_request.deps.json
+/home/lord/Documents/Virgo/Csharp/http_request/bin/Debug/net7.0/http_request.runtimeconfig.json
+/home/lord/Documents/Virgo/Csharp/http_request/bin/Debug/net7.0/http_request.dll
+/home/lord/Documents/Virgo/Csharp/http_request/bin/Debug/net7.0/http_request.pdb
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.GeneratedMSBuildEditorConfig.editorconfig
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.AssemblyInfoInputs.cache
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.AssemblyInfo.cs
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.csproj.CoreCompileInputs.cache
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.dll
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/refint/http_request.dll
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.pdb
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/http_request.genruntimeconfig.cache
+/home/lord/Documents/Virgo/Csharp/http_request/obj/Debug/net7.0/ref/http_request.dll

@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/hoangadminvjppro/.nuget/packages/": {}
+    "/home/lord/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hoangadminvjppro/Documents/Virgo/Csharp/SJF/SJF.csproj",
+      "projectUniqueName": "/home/lord/Documents/Virgo/Csharp/SJF/SJF.csproj",
       "projectName": "SJF",
-      "projectPath": "/home/hoangadminvjppro/Documents/Virgo/Csharp/SJF/SJF.csproj",
-      "packagesPath": "/home/hoangadminvjppro/.nuget/packages/",
-      "outputPath": "/home/hoangadminvjppro/Documents/Virgo/Csharp/SJF/obj/",
+      "projectPath": "/home/lord/Documents/Virgo/Csharp/SJF/SJF.csproj",
+      "packagesPath": "/home/lord/.nuget/packages/",
+      "outputPath": "/home/lord/Documents/Virgo/Csharp/SJF/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/hoangadminvjppro/.nuget/NuGet/NuGet.Config"
+        "/home/lord/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/hoangadminvjppro/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/lord/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }
