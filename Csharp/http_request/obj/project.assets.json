@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/hoanghn/.nuget/packages/": {}
+    "/home/lord/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hoanghn/Documents/Virgo/Csharp/http_request/http_request.csproj",
+      "projectUniqueName": "/home/lord/Documents/Virgo/Csharp/http_request/http_request.csproj",
       "projectName": "http_request",
-      "projectPath": "/home/hoanghn/Documents/Virgo/Csharp/http_request/http_request.csproj",
-      "packagesPath": "/home/hoanghn/.nuget/packages/",
-      "outputPath": "/home/hoanghn/Documents/Virgo/Csharp/http_request/obj/",
+      "projectPath": "/home/lord/Documents/Virgo/Csharp/http_request/http_request.csproj",
+      "packagesPath": "/home/lord/.nuget/packages/",
+      "outputPath": "/home/lord/Documents/Virgo/Csharp/http_request/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/hoanghn/.nuget/NuGet/NuGet.Config"
+        "/home/lord/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -54,18 +54,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[7.0.12, 7.0.12]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.100-rc.2.23502.1/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/lord/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }
